@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { theme } from './Thema';
 import {
   background,
   color,
