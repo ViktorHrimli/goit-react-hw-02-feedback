@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Btn } from './Buttons.styled';
 
 export const Buttons = ({ options, onLeaveFeedback }) => {
@@ -6,4 +7,9 @@ export const Buttons = ({ options, onLeaveFeedback }) => {
       {key}
     </Btn>
   ));
+};
+
+Buttons.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };

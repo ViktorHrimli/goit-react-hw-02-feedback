@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatisticItems } from '../Statistics.styled';
 import { HederTitleFeedback } from 'components/Feedback.styled';
 import { Box } from 'commonStyle/Common.styled';
@@ -26,4 +27,11 @@ export const RenderIfoStatistics = ({
       </StatisticItems>
     </Box>
   );
+};
+RenderIfoStatistics.propTypes = {
+  message: PropTypes.string.isRequired,
+  Obj: PropTypes.array.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.string.isRequired,
+  state: PropTypes.object.isRequired,
 };
