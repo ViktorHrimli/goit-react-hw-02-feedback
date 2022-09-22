@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Box } from 'commonStyle/Common.styled';
 import { Notification } from '../Notificaton/Notification';
-import { RenderIfoStatistics } from './RenderIfo/RenderInfo';
+import { IfoStatistics } from './Info/Info';
 
 export const Statistics = ({
   message,
@@ -15,7 +15,7 @@ export const Statistics = ({
       {total === 0 ? (
         <Notification message="There is no feedback" />
       ) : (
-        <RenderIfoStatistics
+        <IfoStatistics
           Obj={Obj}
           total={total}
           positivePercentage={positivePercentage}

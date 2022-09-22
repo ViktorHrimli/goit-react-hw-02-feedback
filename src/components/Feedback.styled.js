@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { theme } from '../commonStyle/Thema';
 export const HederTitleFeedback = styled.h1`
-  color: ${theme.colors.black};
-  font-family: ${theme.fonts.monospace};
-  font-size: ${theme.fontSizes.l};
+  color: ${p => p.theme.colors.black};
+  font-family: ${p => p.theme.fonts.monospace};
+  font-size: ${p => p.theme.fontSizes.l};
 `;
 
 export const Section = styled.section``;
